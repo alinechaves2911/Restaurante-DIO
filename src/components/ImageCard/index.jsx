@@ -5,11 +5,14 @@ import Text from '../Text';
 import ImageSkeleton from '../ImageSkeleton';
 
 export const Card = styled.div`
-  min-width: 90px;
+  display:flex;
+  justify-content:center;
+  width: 90px;
   height: 90px;
   border-radius: 8px;
   background-image: url(${(props) => props.photo});
   background-size: cover;
+  padding: 10px;
   p {
     margin-left: 6px;
     margin-top: 10px;

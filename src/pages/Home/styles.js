@@ -3,6 +3,11 @@ import Slider from 'react-slick';
 
 import { Text } from '../../components';
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction:row;
+`;
+
 export const Container = styled.aside`
   background-color: ${({ theme: { colors } }) => colors.background};
   width: 360px;
@@ -19,7 +24,7 @@ export const Search = styled.section`
 `;
 
 export const Logo = styled.img`
-  margin: 15px;
+  margin-bottom: 15px;
 `;
 
 export const Title = styled(Text)`
@@ -32,6 +37,3 @@ export const Carousel = styled(Slider)`
   }
 `;
 
-export const Wrapper = styled.div`
-  display: flex;
-`;

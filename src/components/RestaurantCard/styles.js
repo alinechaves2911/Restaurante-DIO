@@ -10,7 +10,7 @@ export const Restaurant = styled.div`
   background-color: #ffffff;
   border-left: 5px solid transparent;
   :hover {
-    background-color: #00000021;
+    background-color: ${(props) => props.theme.colors.background};
     border-left-color: ${(props) => props.theme.colors.primary};
   }
 `;
